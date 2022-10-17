@@ -1,0 +1,148 @@
+.skill-bar-container{
+    float: right;
+    width: 50%;
+    display: block;
+    margin-top: 50px;
+    animation: fadeIn 6s forwards;
+    animation-delay: 1s;
+    will-change: contents;
+    span{
+        display: flex;
+        font-size: 15px;
+        font-family: 'Coolvetica';
+        color: white;
+        letter-spacing: 3px;
+        justify-content:baseline;
+    }
+    .skill-bar{
+        background: #011d2d;
+        padding: 20px;
+        width: 90%;
+        margin: 5px;
+        border-radius: 5px;
+        animation: backInUp 1s;
+        animation: zoomIn 1s;
+        &:nth-of-type(1) {
+            animation-delay: 1.1s;
+        }
+        &:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+        &:nth-of-type(3) {
+            animation-delay: 1.3s;
+        }
+        &:nth-of-type(4) {
+            animation-delay: 1.4s;
+        }
+        &:nth-of-type(5) {
+            animation-delay: 1.5s;
+        }
+        &:nth-of-type(6) {
+            animation-delay: 1.6s;
+        }
+    }
+    .skill-level-HTML,
+    .skill-level-CSS,
+    .skill-level-javascript,
+    .skill-level-react,
+    .skill-level-nodejs,
+    .skill-level-mongodb{
+        width: 100%;
+        height: 3px;
+        margin-top: 5px;
+        margin-bottom:20px ;
+        background-color: gray;
+
+        .HTML-bar{
+            background-color: #e9642a;
+            animation: progress 5s ;
+            height: 3px;
+            width: 90%;
+
+            @keyframes progress {
+            from{
+                width:0px;
+            }
+             to{
+                width:90%;
+             }
+            }
+        }
+        .CSS-bar{
+            background-color:purple;
+            animation: progress1 5s ;
+            height: 3.5px;
+            outline: none;
+            width: 60%;
+            @keyframes progress1 {
+            from{
+                width:0px;
+            }
+             to{
+                width:60%;
+             }
+            }
+        }
+        .javascript-bar{
+            background-color: yellow;
+            animation: progress2 5s ;
+            height: 3px;
+            width: 70%;
+            @keyframes progress2 {
+            from{
+                width:0px;
+            }
+             to{
+                width:70%;
+             }
+            }
+        }
+        .react-bar{
+            background-color: rgb(0, 76, 255);
+            animation: progress3 5s ;
+            height: 3px;
+            width: 80%;
+            @keyframes progress3 {
+            from{
+                width:0px;
+            }
+             to{
+                width:80%;
+             }
+            }
+        }
+        .nodejs-bar{
+            background-color:green;
+            animation: progress4 5s ;
+            height: 3px;
+            width: 40%;
+            @keyframes progress4 {
+            from{
+                width:0px;
+            }
+             to{
+                width:40%;
+             }
+            }
+        }
+        .mongodb-bar{
+            background-color: darkgreen;
+            animation: progress5 5s ;
+            height: 3px;
+            width: 50%;
+            @keyframes progress5 {
+            from{
+                width:0px;
+            }
+             to{
+                width:50%;
+             }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .skill-bar-container{
+        width: 100%;
+    }
+}
